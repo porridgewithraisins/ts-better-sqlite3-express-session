@@ -31,7 +31,7 @@ const BetterSqlite3StoreFactory = require("ts-better-sqlite3-express-session").d
 const BetterSqlite3Store = BetterSqlite3StoreFactory(session);
 
 const store = new BetterSqlite3Store({
-    connection: db,
+    connection: db // a better-sqlite3 database instance,
     tableName: "my-sessions", // optional, default: "sessions"
     ttl: 1000 * 60 * 60 * 24, // one day
 });

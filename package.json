@@ -4,6 +4,13 @@
     "description": "A typescript session store for better-sqlite3 and express-session",
     "repository": "https://github.com/porridgewithraisins/better-better-sqlite3-session-store",
     "author": "Santhanam <santhanambr2002@gmail.com>",
+    "keywords": [
+        "better-sqlite3",
+        "express-session",
+        "session",
+        "store",
+        "typescript"
+    ],
     "license": "MIT",
     "scripts": {
         "dist": "tsc && cp package.json dist && cp README.md dist",
