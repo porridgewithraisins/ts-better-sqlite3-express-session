@@ -6,7 +6,7 @@
     "author": "Santhanam <santhanambr2002@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "dist": "tsc && cp package.json dist",
+        "dist": "tsc && cp package.json dist && cp README.md dist",
         "test": "jest"
     },
     "devDependencies": {
