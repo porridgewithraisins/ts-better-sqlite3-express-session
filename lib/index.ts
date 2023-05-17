@@ -15,11 +15,11 @@ export default (session: ExpressSessionModule): Ret =>
         public constructor(options: BetterSqlite3SessionStoreOptions) {
             super();
 
-            this.#validateOptions();
-
             this.conn = options.connection;
             this.ttl = options.ttl;
             this.tableName = options.tableName || "sessions";
+
+            this.#validateOptions();
 
             // prepare the statements ahead of time thereby letting the database
             // optimize query planning, among other things
