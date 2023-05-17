@@ -22,12 +22,17 @@ npm install ts-better-sqlite3-express-session
 ## Usage
 
 ```typescript
-// With typescript or with ESM Javascript
+// With typescript
 import BetterSqlite3StoreFactory from "ts-better-sqlite3-express-session";
+
+// With ESM JavaScript
+import BetterSqlite3StoreFactory_ from "ts-better-sqlite3-express-session";
+const BetterSqlite3StoreFactory = BetterSqlite3StoreFactory_.default;
 
 // With CommonJS
 const BetterSqlite3StoreFactory = require("ts-better-sqlite3-express-session").default;
 
+// usage
 const BetterSqlite3Store = BetterSqlite3StoreFactory(session);
 
 const store = new BetterSqlite3Store({
