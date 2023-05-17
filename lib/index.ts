@@ -21,11 +21,11 @@ export default (session: ExpressSessionModule): Ret =>
 
             this.#validateOptions();
 
+            this.#createTable();
+
             // prepare the statements ahead of time thereby letting the database
             // optimize query planning, among other things
             this.statements = this.#prepareStatements();
-
-            this.#createTable();
 
             // start a `setInterval()` to delete expired sessions
             this.#startExpirationInterval();
