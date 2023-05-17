@@ -1,6 +1,6 @@
 {
     "name": "ts-better-sqlite3-express-session",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "A typescript session store for better-sqlite3 and express-session",
     "repository": "https://github.com/porridgewithraisins/better-better-sqlite3-session-store",
     "author": "Santhanam <santhanambr2002@gmail.com>",
